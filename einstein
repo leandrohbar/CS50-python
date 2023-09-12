@@ -1,0 +1,4 @@
+m = int(input("Type a mass in kilograms: "))
+c = 300000000 
+e = m*pow(c, 2)
+print(f"The energy equivalent of the mass is: {e} Joules")

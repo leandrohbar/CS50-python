@@ -1,8 +1,8 @@
 def main():
     put_coins()
 
-def put_coins():
 
+def put_coins():
     # check what coin was inserted and the amount dued
     coke_price = 50
     while True:
@@ -21,5 +21,6 @@ def put_coins():
         elif coke_price <= 0:
             print(f"Change Owed: {coke_price * - 1}")
             break
+
 
 main()

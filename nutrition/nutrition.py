@@ -3,6 +3,7 @@ def main():
     fruit = str(input("Item: ")).strip().title()
     calorie(fruit)
 
+
 # 2. Create a function that takes a fruit as an argument and returns the calories for that fruit
 def calorie(fruits):
     calories = {
@@ -29,5 +30,6 @@ def calorie(fruits):
     }
     if fruits in calories:
         print(f"Calories: {calories[fruits]}")
+
 
 main()

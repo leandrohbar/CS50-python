@@ -3,8 +3,9 @@ def main():
     phrase = str(input("Type any phrase: "))
     vowel_out(phrase)
 
+
 def vowel_out(p):
-    vowels = ["a", "e", "i", "o", "u"] # creates a list of the vowels
+    vowels = ["a", "e", "i", "o", "u"]  # creates a list of the vowels
 
     # check and ignore any vowels
     new_word = []
@@ -15,5 +16,6 @@ def vowel_out(p):
     # add the letter besides any vowel to a new variable and print it
     new_word = "".join(new_word)
     print(new_word)
+
 
 main()

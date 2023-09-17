@@ -1,7 +1,10 @@
 # prompt the user to answer
 def main():
-    answer = input("What's the answer to the great question of life? the Universe, and Everything? ").strip()
+    answer = input(
+        "What's the answer to the great question of life? the Universe, and Everything? "
+    ).strip()
     get_answer(answer)
+
 
 # call the function to decide what to answer
 def get_answer(an):
@@ -10,5 +13,6 @@ def get_answer(an):
             print("Yes")
         case _:
             print("No")
+
 
 main()

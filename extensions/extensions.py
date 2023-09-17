@@ -4,6 +4,7 @@ def main():
     # call a function to determine what is the name of the file
     extension(ext)
 
+
 def extension(ext):
     # check each type of files and return the web type of it
     if ".gif" in ext:
@@ -22,5 +23,6 @@ def extension(ext):
         print("application/zip")
     else:
         print("application/octet-stream")
+
 
 main()

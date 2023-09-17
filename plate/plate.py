@@ -18,6 +18,7 @@ def is_valid(s):
     else:
         return True
 
+
 # check the size of the plate
 def max_min_char(plat_e):
     if len(plat_e) > 6 or len(plat_e) < 2:
@@ -25,9 +26,11 @@ def max_min_char(plat_e):
     else:
         return True
 
+
 # check if the 2 first char are letters
 def begining(plat_e):
     return plat_e[0:2].isalpha()
+
 
 # check the if the numbers (if there is) are at the end
 def numbers_end(plat_e):
@@ -45,8 +48,10 @@ def numbers_end(plat_e):
     else:
         return True
 
+
 # check if there is any period, space or pontcuation
 def psp_ver(plat_e):
     return plat_e.isalnum()
+
 
 main()

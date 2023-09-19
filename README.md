@@ -284,3 +284,5 @@ Queries the API for the CoinDesk Bitcoin Price Index at https://api.coindesk.com
 Outputs the current cost of 
 Bitcoins in USD to four decimal places, using , as a thousands separator.
 
+
+## Unit Tests

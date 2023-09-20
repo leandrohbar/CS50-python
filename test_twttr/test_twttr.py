@@ -1,5 +1,22 @@
-from twttr import shorten
 import pytest
+from twttr import shorten
+
+
+def test_str():
+    with pytest.raises(TypeError):
+        shorten(2)
+
+
+def test_omit_number():
+    assert shorten("cs50") != "cs"
+
+
+def test_omit_ponctuation():
+    assert shorten("cs.l") != "csl"
+
+
+def test_lowercase_replacement():
+    assert shorten("falA") != "fal"
 
 
 def test_a():
@@ -29,12 +46,14 @@ def test_upperI():
 def test_o():
     assert shorten("OvO") == "v" or shorten("ovo") == "v"
 
+
 def test_upperO():
     assert shorten("OVO") == "V" or shorten("oVo") == "V"
 
 
 def test_u():
     assert shorten("UrUbU") == "rb" or shorten("urubu") == "rb"
+
 
 def test_upperU():
     assert shorten("URUBU") == "RB" or shorten("uRuBu") == "RB"

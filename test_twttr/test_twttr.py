@@ -1,5 +1,5 @@
-import pytest
 from twttr import shorten
+import pytest
 
 
 def test_a():

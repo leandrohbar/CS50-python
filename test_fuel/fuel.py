@@ -36,7 +36,7 @@ def gauge(p):  # Print the percentage
     elif p >= 99:  # If the percentage is 99% or more
         return "F"
     else:
-        return p
+        return f"{p:.0f}%"
 
 
 if __name__ == "__main__":

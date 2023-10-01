@@ -301,13 +301,14 @@ pytest test_bank.py
 ## Re-requesting a Vanity Plate
 
 In a file called plates.py, reimplement Vanity Plates from Problem Set 2, restructuring your code per the below, wherein is_valid still expects a str as input and returns True if that str meets all requirements and False if it does not, but main is only called if the value of __name__ is "__main__":
+```
 def main():
-    
+
 def is_valid(s):
 
 if __name__ == "__main__":
     main()
-
+```
  Then, in a file called test_plates.py, implement four or more functions that collectively test your implementation of is_valid thoroughly, each of whose names should begin with test_ so that you can execute your tests with:
 
 ## Refueling
@@ -321,6 +322,8 @@ gauge expects an int and returns a str that is:
 and "Z%" otherwise, wherein Z is that same int.
 
 Then, in a file called test_fuel.py, implement two or more functions that collectively test your implementations of convert and gauge thoroughly, each of whose names should begin with test_ so that you can execute your tests with:
+
+# week 6 File I/O
 
 ## Lines of Code
 One way to measure the complexity of a program is to count its number of lines of code (LOC), excluding blank lines and comments. 
